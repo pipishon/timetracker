@@ -104,7 +104,7 @@ export default {
         tasks: this.tasks,
         tracks: this.tracks
       }
-      this.$http.post('http://prestashop.local/timetracker/tools.php', params).then((res) => {
+      this.$http.post('http://wordpress.byalonovich.cx.ua/tools.php', params).then((res) => {
         console.log(res.data)
       })
     },
@@ -164,7 +164,7 @@ export default {
     }
   },
   mounted () {
-    this.$http.get('http://prestashop.local/timetracker/tools.php').then((res) => {
+    this.$http.get('http://wordpress.byalonovich.cx.ua/tools.php').then((res) => {
       this.tracks = res.data.tracks
       this.tasks = res.data.tasks
     })
